@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BPopXamarin.Views.GamePage">
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="Center"  Padding="20">
+            <Label Text="Team: 0" 
+                   x:Name="TextTeam"/>
+            <Label Text="Score: 0" 
+                   x:Name="TextScore"/>
+            <Label Text="Time: 10" 
+                   x:Name="_timer"/>
+            <StackLayout VerticalOptions="Center" HeightRequest="100">
+                <Label Text="Questions" 
+                       x:Name="Text_questions"/>
+            </StackLayout>
+            <StackLayout VerticalOptions="Center" Padding="20">
+                <Button Text="Option1"
+                        x:Name="Btn_option1"
+                        Clicked="Btn_option1_Clicked"/>
+                <Button Text="Option2"
+                        x:Name="Btn_option2"
+                        Clicked="Btn_option2_Clicked"/>
+                <Button Text="Option3"
+                        x:Name="Btn_option3"
+                        Clicked="Btn_option_Clicked"/>
+                <Button Text="Option4"
+                        x:Name="Btn_option4"
+                        Clicked="Btn_option4_Clicked"/>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

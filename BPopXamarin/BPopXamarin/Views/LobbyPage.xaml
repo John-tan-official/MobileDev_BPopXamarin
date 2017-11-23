@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BPopXamarin.Views.LobbyPage">
+    <ContentPage.Content>
+        <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
+            <StackLayout x:Name="SLInfo">
+                <Label Text="Pseudo Lobby" />
+                <Label Text="wait for admin to start the game"/>
+                <Label Text="Points: 0"
+                   x:Name="TextPoints"/>
+                <Label Text="name"
+                   x:Name="TextName"/>
+                <Label Text="Team: "
+                   x:Name="TextTeam"/>
+            </StackLayout>
+            <StackLayout x:Name="SLBegins" IsVisible="False">
+                <Label Text="Text" x:Name="TextGameBegins" FontSize="Large"/>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
